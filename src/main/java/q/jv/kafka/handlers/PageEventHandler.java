@@ -11,9 +11,9 @@ public class PageEventHandler {
     @Bean
     public Consumer<PageEvent> pageEventConsumer(){
         return (input)->{
-            System.out.printf("***************");
-            System.out.printf(input.toString());
-            System.out.printf("***************");
+            System.out.println("***************");
+            System.out.println(input.toString());
+            System.out.println("***************");
         };
     }
 }
