@@ -34,7 +34,7 @@ public class PageEventController {
                 name,
                 Math.random()>0.5?"U1":"U2",
                 new Date()
-                ,5+new Random().nextInt(1000)
+                ,10+new Random().nextInt(1000)
         );
         streamBridge.send(topic, event);
         return event;
